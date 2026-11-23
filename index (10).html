@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CareWell Hospital</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      line-height: 1.6;
+      background-color: #f0f8ff;
+    }
+
+    /* Top emergency bar */
+    .top-bar {
+      background-color: #d32f2f;
+      color: white;
+      text-align: center;
+      padding: 8px;
+      font-weight: bold;
+    }
+
+    /* Navigation */
+    header {
+      background-color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 4px #ccc;
+    }
+
+    header h2 {
+      color: #0288d1;
+    }
+
+    header a {
+      color: #333;
+      text-decoration: none;
+      margin-left: 18px;
+    }
+
+    header a:hover {
+      color: #0288d1;
+    }
+
+    /* Hero */
+    .hero {
+      background-color: #0288d1;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      margin-bottom: 25px;
+      font-size: 18px;
+    }
+
+    .btn {
+      background-color: white;
+      color: #0288d1;
+      padding: 12px 28px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #e1f5fe;
+    }
+
+    /* Sections */
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      color: #0288d1;
+      margin-bottom: 30px;
+    }
+
+    .about p {
+      text-align: center;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .box {
+      background-color: white;
+      width: 220px;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px #bbb;
+    }
+
+    .box .icon {
+      font-size: 40px;
+      margin-bottom: 8px;
+    }
+
+    .box h3 {
+      margin-bottom: 5px;
+    }
+
+    /* Doctors */
+    .doctor .pic {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #0288d1;
+      color: white;
+      font-size: 30px;
+      line-height: 80px;
+      margin: 0 auto 10px;
+    }
+
+    /* Health tips */
+    .tips {
+      background-color: white;
+      max-width: 100%;
+    }
+
+    .tips ul {
+      max-width: 600px;
+      margin: auto;
+      padding-left: 20px;
+    }
+
+    .tips li {
+      margin-bottom: 10px;
+    }
+
+    /* Appointment form */
+    .form-box {
+      background-color: white;
+      max-width: 450px;
+      margin: auto;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px #bbb;
+    }
+
+    .form-box label {
+      display: block;
+      margin-top: 12px;
+    }
+
+    .form-box input,
+    .form-box select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid gray;
+      border-radius: 4px;
+    }
+
+    .form-box .btn {
+      background-color: #0288d1;
+      color: white;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    /* Emergency section */
+    .emergency {
+      background-color: #ffebee;
+      max-width: 100%;
+      text-align: center;
+    }
+
+    .emergency h2 {
+      color: #d32f2f;
+    }
+
+    .emergency p {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    /* Mobile screens */
+    @media (max-width: 600px) {
+      header {
+        text-align: center;
+        justify-content: center;
+      }
+
+      header a {
+        margin: 5px 8px;
+      }
+
+      .hero h1 {
+        font-size: 28px;
+      }
+
+      .box {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="top-bar">🚑 Emergency Helpline: 108 | Hospital: 0866-1234567</div>
+
+  <header>
+    <h2>🏥 CareWell Hospital</h2>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#departments">Departments</a>
+      <a href="#doctors">Doctors</a>
+      <a href="#appointment">Appointment</a>
+      <a href="#emergency">Emergency</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Your Health, Our Priority</h1>
+    <p>Quality healthcare with caring doctors, 24 hours a day.</p>
+    <a href="#appointment" class="btn">Book Appointment</a>
+  </div>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <h2>About Our Hospital</h2>
+    <p>
+      CareWell Hospital has been serving the people for more than 20 years.
+      We have modern equipment, experienced doctors and friendly staff to take
+      care of you and your family. Our hospital has 200 beds and is open
+      24 hours a day.
+    </p>
+  </section>
+
+  <!-- Departments -->
+  <section id="departments">
+    <h2>Our Departments</h2>
+    <div class="row">
+      <div class="box">
+        <div class="icon">❤️</div>
+        <h3>Cardiology</h3>
+        <p>Heart care and treatment</p>
+      </div>
+      <div class="box">
+        <div class="icon">🦴</div>
+        <h3>Orthopedics</h3>
+        <p>Bone and joint care</p>
+      </div>
+      <div class="box">
+        <div class="icon">👶</div>
+        <h3>Pediatrics</h3>
+        <p>Healthcare for children</p>
+      </div>
+      <div class="box">
+        <div class="icon">🧠</div>
+        <h3>Neurology</h3>
+        <p>Brain and nerve care</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Doctors -->
+  <section id="doctors">
+    <h2>Meet Our Doctors</h2>
+    <div class="row">
+      <div class="box doctor">
+        <div class="pic">R</div>
+        <h3>Dr. Ramesh</h3>
+        <p>Cardiologist</p>
+        <p>15 years experience</p>
+      </div>
+      <div class="box doctor">
+        <div class="pic">S</div>
+        <h3>Dr. Sunitha</h3>
+        <p>Pediatrician</p>
+        <p>10 years experience</p>
+      </div>
+      <div class="box doctor">
+        <div class="pic">K</div>
+        <h3>Dr. Kiran</h3>
+        <p>Orthopedic Surgeon</p>
+        <p>12 years experience</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Medical services -->
+  <section>
+    <h2>Medical Services</h2>
+    <div class="row">
+      <div class="box">🩺 General Checkup</div>
+      <div class="box">🧪 Laboratory Tests</div>
+      <div class="box">💊 24/7 Pharmacy</div>
+      <div class="box">🩻 X-Ray &amp; Scan</div>
+    </div>
+  </section>
+
+  <!-- Health information -->
+  <section class="tips">
+    <h2>Health Tips</h2>
+    <ul>
+      <li>Drink at least 2 to 3 litres of water every day.</li>
+      <li>Sleep for 7 to 8 hours daily.</li>
+      <li>Do some exercise or walking for 30 minutes.</li>
+      <li>Eat fruits and vegetables and avoid junk food.</li>
+      <li>Go for a regular health checkup once a year.</li>
+    </ul>
+  </section>
+
+  <!-- Appointment -->
+  <section id="appointment">
+    <h2>Book an Appointment</h2>
+    <div class="form-box">
+      <form>
+        <label>Patient Name</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Phone Number</label>
+        <input type="text" placeholder="Enter phone number">
+
+        <label>Department</label>
+        <select>
+          <option>Cardiology</option>
+          <option>Orthopedics</option>
+          <option>Pediatrics</option>
+          <option>Neurology</option>
+        </select>
+
+        <label>Preferred Date</label>
+        <input type="date">
+
+        <button type="submit" class="btn">Book Now</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Emergency contacts -->
+  <section id="emergency" class="emergency">
+    <h2>Emergency Contacts</h2>
+    <p>🚑 Ambulance: 108</p>
+    <p>📞 Hospital Emergency: 0866-1234567</p>
+    <p>📍 CareWell Hospital, Main Road, Vijayawada</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 CareWell Hospital. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
